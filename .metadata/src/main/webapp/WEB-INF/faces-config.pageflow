@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf16010206806270" configfile="/JsfSpringHibernateDemo/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="pages/index.xhtml" x="122" y="370" id="pf16012758297960" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf16012758297961 pf16012758297962" path="/pages/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="pages/success.xhtml" x="338" y="178" id="pf16012758297963" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf16012758297961" path="/pages/success.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="pages/error.xhtml" x="338" y="562" id="pf16012758297964" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf16012758297962" path="/pages/error.xhtml"/>
+  <links id="pf16012758297961" target="pf16012758297963" source="pf16012758297960" outcome="success"/>
+  <links id="pf16012758297962" target="pf16012758297964" source="pf16012758297960" outcome="error"/>
+</pageflow:Pageflow>
